@@ -3,82 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri Desa Kalimas - Sungai Kakap</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
+    <title>Desa Kalimas - Sungai Kakap, Kubu Raya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="#home">
-                Desa Kalimas
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-mountain me-2"></i>Desa Kalimas
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#home">Home</a>
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil Desa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#statistik">Statistik</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Dusun
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#dusun-cempaka">Dusun Cempaka</a></li>
+                            <li><a class="dropdown-item" href="#dusun-mawar">Dusun Mawar</a></li>
+                            <li><a class="dropdown-item" href="#dusun-melati">Dusun Melati</a></li>
+                            <li><a class="dropdown-item" href="#dusun-anggrek">Dusun Anggrek</a></li>
+                            <li><a class="dropdown-item" href="#dusun-beringin">Dusun Beringin</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#profil">Profil Desa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#infografis">Infografis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#dusun-cempaka">Dusun Cempaka</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#dusun-beringin">Dusun Beringin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#dusun-cempaka">Dusun Mawar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#dusun-cempaka">Dusun Melati</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#dusun-cempaka">Dusun Anggrek</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#potensi">Potensi Desa</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="row align-items-center min-vh-100">
+            <div class="row align-items-center vh-100">
                 <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="display-4 fw-bold text-primary mb-4">Selamat Datang di Desa Kalimas</h1>
-                        <p class="lead mb-4">
-                            Desa Kalimas adalah sebuah desa yang terletak di Kecamatan Sungai Kakap, 
-                            Kabupaten Kubu Raya, Kalimantan Barat. Desa yang kaya akan keindahan alam 
-                            dan budaya lokal yang masih terjaga dengan baik.
+                    <div class="hero-content text-white">
+                        <h1 class="hero-title mb-4">Desa Kalimas</h1>
+                        <p class="hero-subtitle mb-3">Kecamatan Sungai Kakap, Kabupaten Kubu Raya</p>
+                        <p class="hero-description mb-4">
+                            Desa yang kaya akan potensi pertanian dan budaya, terletak strategis 
+                            di Kalimantan Barat dengan masyarakat yang rukun dan dinamis.
                         </p>
-                        <p class="mb-4">
-                            Dengan penduduk yang ramah dan lingkungan yang asri, Desa Kalimas menjadi 
-                            salah satu destinasi yang menarik untuk dikunjungi. Desa ini memiliki potensi 
-                            wisata alam yang memukau serta tradisi budaya yang unik dan menarik.
-                        </p>
-                        <a href="#profil" class="btn btn-primary btn-lg">
-                            <i class="fas fa-arrow-down me-2"></i>Jelajahi Lebih Lanjut
+                        <div class="hero-stats">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3>7,001</h3>
+                                        <small>Penduduk</small>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3>1,872</h3>
+                                        <small>KK</small>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3>5</h3>
+                                        <small>Dusun</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#profil" class="btn btn-primary btn-lg mt-4">
+                            Jelajahi Desa
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image">
                         <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                            <p>Foto Desa Kalimas<br><small>(Silakan ganti dengan foto asli)</small></p>
+                            <i class="fas fa-image fa-4x mb-3"></i>
+                            <p>Foto Pemandangan Desa Kalimas</p>
                         </div>
                     </div>
                 </div>
@@ -86,261 +93,155 @@
         </div>
     </section>
 
-    <!-- Profil Desa Section -->
-    <section id="profil" class="section-padding bg-light">
+    <!-- Profil Section -->
+    <section id="profil" class="section py-5">
         <div class="container">
+            <h2 class="section-title text-center mb-5">Profil Desa Kalimas</h2>
             <div class="row">
-                <div class="col-12">
-                    <h2 class="section-title text-center mb-5">Profil Desa Kalimas</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Lokasi</h5>
-                            <p class="card-text">Kecamatan Sungai Kakap<br>Kabupaten Kubu Raya<br>Kalimantan Barat</p>
+                <div class="col-lg-8">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Sejarah Singkat</h5>
+                            <p class="card-text">
+                                Desa Kalimas didirikan oleh para ulama dari suku Bugis Banjar dan keturunan Arab. 
+                                Nama "Kalimas" konon berasal dari cahaya kuning yang terbentang di sepanjang sungai 
+                                yang dilihat para pendiri desa selama 3 hari berturut-turut. Ada juga yang menyebutkan 
+                                nama Kalimas merupakan singkatan dari Kalimah Syahadat, mengingat para pendirinya 
+                                adalah ulama yang taat.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-users text-primary mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Pemerintahan</h5>
-                            <p class="card-text">Dipimpin oleh Kepala Desa<br>dengan sistem pemerintahan<br>desa yang demokratis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-leaf text-primary mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Potensi</h5>
-                            <p class="card-text">Wisata alam, pertanian,<br>perikanan, dan budaya<br>lokal yang kaya</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12">
+
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Sejarah Desa</h5>
+                            <h5 class="card-title">Visi Desa</h5>
                             <p class="card-text">
-                                Desa Kalimas memiliki sejarah panjang sebagai salah satu desa di wilayah Sungai Kakap. 
-                                Nama "Kalimas" sendiri memiliki makna historis yang erat kaitannya dengan kondisi geografis 
-                                dan budaya masyarakat setempat. Desa ini telah berkembang dari waktu ke waktu dengan tetap 
-                                mempertahankan nilai-nilai luhur dan kearifan lokal.
+                                "Terwujudnya Seorang Pemimpin Yang Amanah dan Transparansi Dalam Rangka 
+                                Mewujudkan Masyarakat Kalimas Yang Rukun, Dinamis, Kreatif, Inovatif, 
+                                Mandiri Santun dan Berkepribadian"
                             </p>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Umum</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt text-primary me-2"></i>Luas: ±2,855 KM²</li>
+                                <li><i class="fas fa-ruler text-primary me-2"></i>Ketinggian: 0-15 mdpl</li>
+                                <li><i class="fas fa-road text-primary me-2"></i>Jarak ke Kecamatan: 4,5 km</li>
+                                <li><i class="fas fa-city text-primary me-2"></i>Jarak ke Kabupaten: 31,1 km</li>
+                                <li><i class="fas fa-building text-primary me-2"></i>Jarak ke Provinsi: 17,4 km</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Kepala Desa</h5>
+                            <p class="mb-2"><strong>MURDI</strong></p>
+                            <p class="text-muted mb-1">Periode: 2019-2027</p>
+                            <p class="text-muted">Pendidikan: SMA</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Infografis Section -->
-    <section id="infografis" class="section-padding">
+    <!-- Statistik Section -->
+    <section id="statistik" class="section bg-light py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="section-title text-center mb-5">Infografis Desa</h2>
-                </div>
-            </div>
-            <div class="row">
+            <h2 class="section-title text-center mb-5">Statistik Penduduk</h2>
+            
+            <!-- Demografis -->
+            <div class="row mb-5">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="stats-card text-center">
                         <div class="stats-icon">
-                            <i class="fas fa-home"></i>
+                            <i class="fas fa-users text-primary"></i>
                         </div>
-                        <h3 class="stats-number">250+</h3>
-                        <p class="stats-label">Rumah Tangga</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stats-card text-center">
-                        <div class="stats-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="stats-number">1,200+</h3>
+                        <h3 class="stats-number">7,001</h3>
                         <p class="stats-label">Total Penduduk</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="stats-card text-center">
                         <div class="stats-icon">
-                            <i class="fas fa-seedling"></i>
+                            <i class="fas fa-male text-info"></i>
                         </div>
-                        <h3 class="stats-number">150</h3>
-                        <p class="stats-label">Hektar Lahan Pertanian</p>
+                        <h3 class="stats-number">3,531</h3>
+                        <p class="stats-label">Laki-laki</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="stats-card text-center">
                         <div class="stats-icon">
-                            <i class="fas fa-school"></i>
+                            <i class="fas fa-female text-danger"></i>
                         </div>
-                        <h3 class="stats-number">3</h3>
-                        <p class="stats-label">Fasilitas Pendidikan</p>
+                        <h3 class="stats-number">3,470</h3>
+                        <p class="stats-label">Perempuan</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stats-card text-center">
+                        <div class="stats-icon">
+                            <i class="fas fa-home text-success"></i>
+                        </div>
+                        <h3 class="stats-number">1,872</h3>
+                        <p class="stats-label">Kepala Keluarga</p>
                     </div>
                 </div>
             </div>
-            
-            <!-- Chart Section -->
-            <div class="row mt-5">
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Komposisi Penduduk Berdasarkan Usia</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-placeholder">
-                                <i class="fas fa-chart-pie"></i>
-                                <p>Grafik Komposisi Usia<br><small>Anak-anak: 30%, Dewasa: 55%, Lansia: 15%</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-success text-white">
-                            <h5 class="mb-0">Mata Pencaharian Utama</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-placeholder">
-                                <i class="fas fa-chart-bar"></i>
-                                <p>Grafik Pekerjaan<br><small>Pertanian: 45%, Perikanan: 30%, Lainnya: 25%</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Dusun Cempaka Section -->
-    <section id="dusun-cempaka" class="section-padding bg-light">
-        <div class="container">
+            <!-- Penduduk per Dusun -->
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section-title text-center mb-5">Dusun Cempaka</h2>
-                </div>
-            </div>
-            
-            <!-- Dusun Info -->
-            <div class="row mb-5">
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-users text-success mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Jumlah Penduduk</h5>
-                            <h3 class="text-success">320</h3>
-                            <p class="card-text">Jiwa</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-home text-info mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Jumlah KK</h5>
-                            <h3 class="text-info">85</h3>
-                            <p class="card-text">Kepala Keluarga</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-expand-arrows-alt text-warning mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Luas Wilayah</h5>
-                            <h3 class="text-warning">45</h3>
-                            <p class="card-text">Hektar</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Maps dan Foto -->
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0"><i class="fas fa-map me-2"></i>Peta Lokasi Dusun Cempaka</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="map-container">
-                                <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.663541566589!2d109.2201771!3d-0.07946600000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d5d001bc76d4f%3A0xd9b66d3fafad4578!2sDusun%20Cempaka!5e0!3m2!1sen!2sid!4v1723978912345!5m2!1sen!2sid"
-                                    width="100%" 
-                                    height="300" 
-                                    style="border:0;" 
-                                    allowfullscreen="" 
-                                    loading="lazy">
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-success text-white">
-                            <h5 class="mb-0"><i class="fas fa-camera me-2"></i>Galeri Dusun Cempaka</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="gallery-grid">
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 1</small>
-                                    </div>
-                                </div>
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 2</small>
-                                    </div>
-                                </div>
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 3</small>
-                                    </div>
-                                </div>
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 4</small>
-                                    </div>
+                    <h4 class="text-center mb-4">Penduduk Per Dusun</h4>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5>Cempaka</h5>
+                                    <h3 class="text-primary">2,147</h3>
+                                    <small class="text-muted">jiwa</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Info -->
-            <div class="row mt-4">
-                <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-info-circle me-2"></i>Tentang Dusun Cempaka</h5>
-                            <p class="card-text">
-                                Dusun Cempaka merupakan salah satu dusun yang berada di wilayah Desa Kalimas. 
-                                Dusun ini memiliki karakteristik unik dengan masyarakat yang mayoritas bermata pencaharian 
-                                sebagai petani dan peternak. Lokasi dusun yang strategis dan akses transportasi yang baik 
-                                membuat dusun ini mudah dijangkau dari pusat desa maupun kecamatan.
-                            </p>
-                            <div class="row mt-3">
-                                <div class="col-md-6">
-                                    <h6><i class="fas fa-seedling text-success me-2"></i>Potensi Pertanian</h6>
-                                    <p>Dusun Cempaka memiliki lahan pertanian yang subur dengan komoditas utama padi dan sayuran.</p>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5>Beringin</h5>
+                                    <h3 class="text-success">1,800</h3>
+                                    <small class="text-muted">jiwa</small>
                                 </div>
-                                <div class="col-md-6">
-                                    <h6><i class="fas fa-water text-info me-2"></i>Sumber Air</h6>
-                                    <p>Memiliki akses air bersih yang baik dari sumur bor dan sumber air alami.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5>Melati</h5>
+                                    <h3 class="text-info">1,283</h3>
+                                    <small class="text-muted">jiwa</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5>Mawar</h5>
+                                    <h3 class="text-warning">1,124</h3>
+                                    <small class="text-muted">jiwa</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5>Anggrek</h5>
+                                    <h3 class="text-secondary">647</h3>
+                                    <small class="text-muted">jiwa</small>
                                 </div>
                             </div>
                         </div>
@@ -350,127 +251,411 @@
         </div>
     </section>
 
-    <!-- Dusun Beringin Section -->
-    <section id="dusun-beringin" class="section-padding bg-light">
+    <!-- Dusun Sections -->
+    <section id="dusun-cempaka" class="section py-5">
         <div class="container">
+            <h2 class="section-title text-center mb-5">Dusun Cempaka</h2>
             <div class="row">
-                <div class="col-12">
-                    <h2 class="section-title text-center mb-5">Dusun Cempaka</h2>
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Dusun</h5>
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-primary">2,147</h4>
+                                    <p class="mb-0">Penduduk</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-success">568</h4>
+                                    <p class="mb-0">Kepala Keluarga</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-info">MUHTAR</h4>
+                                    <p class="mb-0">Kepala Dusun</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>Potensi Utama:</h6>
+                            <ul>
+                                <li>Padi: 137 ton/tahun</li>
+                                <li>Gula Merah: 530 kg/tahun</li>
+                                <li>Ayam Daging: 304,5 ton/tahun</li>
+                                <li>Ternak (Kambing & Sapi): 50 ekor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Galeri</h5>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Dusun Mawar -->
+    <section id="dusun-mawar" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Dusun Mawar</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Dusun</h5>
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-primary">1,124</h4>
+                                    <p class="mb-0">Penduduk</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-success">304</h4>
+                                    <p class="mb-0">Kepala Keluarga</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-info">ALIYAS</h4>
+                                    <p class="mb-0">Kepala Dusun</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>Potensi Utama:</h6>
+                            <ul>
+                                <li>Langsat: 25 ton/tahun</li>
+                                <li>Durian: 5,300 buah/tahun</li>
+                                <li>Jeruk: 180 ton/tahun</li>
+                                <li>Ayam Daging: 72 ton/tahun</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Galeri</h5>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dusun Melati -->
+    <section id="dusun-melati" class="section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Dusun Melati</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Dusun</h5>
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-primary">1,283</h4>
+                                    <p class="mb-0">Penduduk</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-success">355</h4>
+                                    <p class="mb-0">Kepala Keluarga</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-info">SAFARUDDIN</h4>
+                                    <p class="mb-0">Kepala Dusun</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>Potensi Utama:</h6>
+                            <ul>
+                                <li>Langsat: 130 ton/tahun</li>
+                                <li>Durian: 10,000 buah/tahun</li>
+                                <li>Padi: 25 ton/tahun</li>
+                                <li>Pisang: 5 ton/tahun</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Galeri</h5>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dusun Anggrek -->
+    <section id="dusun-anggrek" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Dusun Anggrek</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Dusun</h5>
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-primary">647</h4>
+                                    <p class="mb-0">Penduduk</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-success">187</h4>
+                                    <p class="mb-0">Kepala Keluarga</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-info">JAMALUDDIN</h4>
+                                    <p class="mb-0">Kepala Dusun</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>Potensi Utama:</h6>
+                            <ul>
+                                <li>Langsat: 80 ton/tahun</li>
+                                <li>Durian: 7,500 buah/tahun</li>
+                                <li>Sayur Mayur: 6,7 ton/tahun</li>
+                                <li>Ternak: 20 ekor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Galeri</h5>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dusun Beringin -->
+    <section id="dusun-beringin" class="section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Dusun Beringin</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Informasi Dusun</h5>
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-primary">1,800</h4>
+                                    <p class="mb-0">Penduduk</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-success">458</h4>
+                                    <p class="mb-0">Kepala Keluarga</p>
+                                </div>
+                                <div class="col-md-4 text-center mb-3">
+                                    <h4 class="text-info">MUHALI</h4>
+                                    <p class="mb-0">Kepala Dusun</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>Potensi Utama:</h6>
+                            <ul>
+                                <li>Padi: 105 ton/tahun</li>
+                                <li>Sayur Mayur: 145 ton/tahun</li>
+                                <li>Ternak: 25 ekor</li>
+                                <li>Beragam agama dan budaya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Galeri</h5>
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-2">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-placeholder">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Potensi Desa -->
+    <section id="potensi" class="section bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Potensi Desa</h2>
             
-            <!-- Dusun Info -->
             <div class="row mb-5">
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-users text-success mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Jumlah Penduduk</h5>
-                            <h3 class="text-success">320</h3>
-                            <p class="card-text">Jiwa</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+                            <h5>Pertanian</h5>
+                            <p>Padi: 316,4 ton/tahun<br>Sayur: 158,5 ton/tahun</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-home text-info mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Jumlah KK</h5>
-                            <h3 class="text-info">85</h3>
-                            <p class="card-text">Kepala Keluarga</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-apple-alt fa-3x text-warning mb-3"></i>
+                            <h5>Buah-buahan</h5>
+                            <p>Langsat: 235 ton/tahun<br>Durian: 22.800 buah/tahun</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-expand-arrows-alt text-warning mb-3" style="font-size: 3rem;"></i>
-                            <h5 class="card-title">Luas Wilayah</h5>
-                            <h3 class="text-warning">45</h3>
-                            <p class="card-text">Hektar</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-drumstick-bite fa-3x text-info mb-3"></i>
+                            <h5>Peternakan</h5>
+                            <p>Ayam: 377 ton/tahun<br>Ternak: 95 ekor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-industry fa-3x text-secondary mb-3"></i>
+                            <h5>Industri</h5>
+                            <p>Gula Merah: 530 kg/tahun<br>Kerajinan Rumahan</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Maps dan Foto -->
+            <!-- Detail Potensi -->
             <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0"><i class="fas fa-map me-2"></i>Peta Lokasi Dusun Cempaka</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="map-container">
-                                <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.663541566589!2d109.2201771!3d-0.07946600000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d5d001bc76d4f%3A0xd9b66d3fafad4578!2sDusun%20Cempaka!5e0!3m2!1sen!2sid!4v1723978912345!5m2!1sen!2sid"
-                                    width="100%" 
-                                    height="300" 
-                                    style="border:0;" 
-                                    allowfullscreen="" 
-                                    loading="lazy">
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-header bg-success text-white">
-                            <h5 class="mb-0"><i class="fas fa-camera me-2"></i>Galeri Dusun Cempaka</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="gallery-grid">
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 1</small>
-                                    </div>
-                                </div>
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 2</small>
-                                    </div>
-                                </div>
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 3</small>
-                                    </div>
-                                </div>
-                                <div class="gallery-item">
-                                    <div class="image-placeholder-small">
-                                        <i class="fas fa-image"></i>
-                                        <small>Foto 4</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Info -->
-            <div class="row mt-4">
                 <div class="col-12">
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-info-circle me-2"></i>Tentang Dusun Cempaka</h5>
-                            <p class="card-text">
-                                Dusun Cempaka merupakan salah satu dusun yang berada di wilayah Desa Kalimas. 
-                                Dusun ini memiliki karakteristik unik dengan masyarakat yang mayoritas bermata pencaharian 
-                                sebagai petani dan peternak. Lokasi dusun yang strategis dan akses transportasi yang baik 
-                                membuat dusun ini mudah dijangkau dari pusat desa maupun kecamatan.
-                            </p>
-                            <div class="row mt-3">
+                            <h5 class="card-title">Potensi Unggulan</h5>
+                            <div class="row">
                                 <div class="col-md-6">
-                                    <h6><i class="fas fa-seedling text-success me-2"></i>Potensi Pertanian</h6>
-                                    <p>Dusun Cempaka memiliki lahan pertanian yang subur dengan komoditas utama padi dan sayuran.</p>
+                                    <h6 class="text-primary">Sektor Pertanian</h6>
+                                    <p>Desa Kalimas memiliki lahan pertanian yang luas dan subur, cocok untuk:</p>
+                                    <ul>
+                                        <li>Padi dengan produktivitas tinggi</li>
+                                        <li>Tanaman buah-buahan tropis (langsat, durian, pisang)</li>
+                                        <li>Sayuran dan tanaman palawija</li>
+                                        <li>Perkebunan kelapa dan kelapa sawit</li>
+                                    </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <h6><i class="fas fa-water text-info me-2"></i>Sumber Air</h6>
-                                    <p>Memiliki akses air bersih yang baik dari sumur bor dan sumber air alami.</p>
+                                    <h6 class="text-success">Sektor Peternakan</h6>
+                                    <p>Potensi pengembangan peternakan meliputi:</p>
+                                    <ul>
+                                        <li>Ayam daging dengan produksi besar</li>
+                                        <li>Ternak sapi dan kambing</li>
+                                        <li>Budidaya perikanan darat</li>
+                                        <li>Industri gula kelapa tradisional</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -486,34 +671,42 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h5><i class="fas fa-mountain me-2"></i>Desa Kalimas</h5>
-                    <p class="mb-2">Kecamatan Sungai Kakap, Kabupaten Kubu Raya</p>
-                    <p class="mb-2">Kalimantan Barat, Indonesia</p>
+                    <p class="mb-1">Kecamatan Sungai Kakap</p>
+                    <p class="mb-1">Kabupaten Kubu Raya, Kalimantan Barat</p>
+                    <p class="mb-0">Indonesia</p>
                 </div>
-                <div class="col-lg-6 text-lg-end">
-                    <p class="mb-2">Email: desakalimas@example.com</p>
-                    <p class="mb-2">Telepon: (0561) 123-4567</p>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                <div class="col-lg-6">
+                    <h6>Informasi Kontak</h6>
+                    <p class="mb-1">Email: desakalimas@example.com</p>
+                    <p class="mb-1">Telepon: (0561) 123-4567</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             <hr class="my-3">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2024 Desa Kalimas. Dibuat dengan ❤️ untuk masyarakat desa.</p>
+                    <p class="mb-0">&copy; 2025 Kelompok KKU UMP 66. Website resmi desa.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Smooth Scrolling Script -->
+    <!-- Custom JS -->
     <script>
-        // Smooth scrolling untuk navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -530,27 +723,38 @@
             });
         });
 
-        // Update active navbar item
+        // Active navigation
         window.addEventListener('scroll', () => {
-            let current = '';
             const sections = document.querySelectorAll('section');
-            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const scrollPos = window.scrollY + 100;
 
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - navbarHeight - 50)) {
-                    current = section.getAttribute('id');
-                }
-            });
+                const sectionBottom = sectionTop + section.offsetHeight;
+                const sectionId = section.getAttribute('id');
 
-            const navItems = document.querySelectorAll('.nav-link');
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href') === '#' + current) {
-                    item.classList.add('active');
+                if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
                 }
             });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(33, 37, 41, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(33, 37, 41, 0.8)';
+                navbar.style.backdropFilter = 'blur(5px)';
+            }
         });
     </script>
 </body>
