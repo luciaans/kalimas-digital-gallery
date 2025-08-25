@@ -467,6 +467,243 @@ li {
     color: #6c757d !important;
 }
 
+/* Navbar Logo Styles */
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(143, 188, 143, 0.3);
+}
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-1px);
+}
+
+.navbar-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Kepala Desa Card Styles */
+.kepala-desa-card {
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.kepala-desa-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Photo Container */
+.kepala-desa-photo {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 3px;
+    transition: all 0.3s ease;
+}
+
+.kepala-desa-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(44, 85, 48, 0.3);
+}
+
+.kepala-desa-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Photo Overlay for placeholder */
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay when image fails to load */
+.kepala-desa-photo img[src=""],
+.kepala-desa-photo img:not([src]),
+.kepala-desa-photo img[src="img/kepala-desa-murdi.jpg"]:not([complete]) {
+    opacity: 0;
+}
+
+.kepala-desa-photo img[src=""],
+.kepala-desa-photo img:not([src]) + .photo-overlay,
+.kepala-desa-photo img[src="img/kepala-desa-murdi.jpg"]:not([complete]) + .photo-overlay {
+    opacity: 1;
+}
+
+.photo-overlay i {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Kepala Desa Info */
+.kepala-desa-info {
+    padding-left: 0.5rem;
+}
+
+.kepala-desa-name {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.kepala-desa-info .small {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.kepala-desa-info i {
+    color: var(--primary-color);
+    width: 12px;
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.35em 0.65em;
+    border-radius: 15px;
+}
+
+/* Border top for additional info */
+.border-top {
+    border-color: var(--border-color) !important;
+}
+
+/* Alternative photo placeholder with better visibility */
+.kepala-desa-photo.placeholder {
+    background: linear-gradient(135deg, 
+        var(--primary-color) 0%, 
+        var(--secondary-color) 50%, 
+        var(--accent-color) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kepala-desa-photo.placeholder i {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .kepala-desa-photo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
+    }
+    
+    .kepala-desa-card .row {
+        text-align: center;
+    }
+    
+    .kepala-desa-card .col-4,
+    .kepala-desa-card .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .kepala-desa-info {
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .kepala-desa-photo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .kepala-desa-name {
+        font-size: 1rem;
+    }
+    
+    .photo-overlay i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive adjustments for logo */
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .navbar-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .navbar-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* Alternative jika ingin logo persegi */
+.navbar-logo.square {
+    border-radius: 8px;
+}
+
+/* Alternative jika ingin logo lebih besar */
+.navbar-logo.large {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-logo.large + .navbar-text {
+    font-size: 1.5rem;
+}
+
 /* Footer Styles */
 footer {
     background: linear-gradient(135deg, #212529 0%, #343a40 100%) !important;
