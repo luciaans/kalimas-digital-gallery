@@ -36,7 +36,7 @@ Website ini dikembangkan sebagai bagian dari program KKU (Kuliah Kerja Universit
 
 1. Clone repository
    ```bash
-   git clone https://github.com/kikialqadrie/website-desa-kalimas.git
+   git clone https://github.com/luciaans/kalimas-digital-gallery.git
    ```
 
 2. Buka file `index.html` di browser
